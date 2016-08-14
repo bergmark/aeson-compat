@@ -14,8 +14,8 @@
 --
 --   * 'decode' etc. work as in @aeson >=0.9@
 --   * but it is generalised to work in any 'MonadThrow' (that is extra)
---   * '.:?' works as in @aeson <0.10@
---   * '.:!' works as '.:?' in @aeson ==0.10@
+--   * '.:?' works as in @aeson <0.10 || > 0.11@
+--   * '.:!' works as in @aeson <0.10 || >= 0.11@, as '.:?' did in @aeson 0.10.*@
 --   * Orphan instances 'FromJSON' 'Day' and 'FromJSON' 'LocalTime' for @aeson <0.10@
 --   * 'Encoding' related functionality is not added. It's present only with @aeson >=0.10@
 --
